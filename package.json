@@ -1,0 +1,26 @@
+{
+  "name": "ytmp3-remake",
+  "version": "1.0.0",
+  "description": "A simple youtube downloader that converts a youtube video and returns it as mp3 format [⚠️ W.I.P]\r <i>Want to instead convert to mp4? check out <a href=\"https://github.com/rxfe-softworks/ytmp4-remake\">@rxfe-softworks/ytmp4-remake</a></i>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxfe-a/ytmp3-remake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rxfe-a/ytmp3-remake/issues"
+  },
+  "homepage": "https://github.com/rxfe-a/ytmp3-remake#readme",
+  "dependencies": {
+    "@fastify/static": "^8.2.0",
+    "fastify": "^5.6.1",
+    "ffmpeg": "^0.0.4",
+    "ytdl": "^1.4.1"
+  }
+}
