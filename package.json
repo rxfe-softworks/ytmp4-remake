@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rxfe-a/ytmp3-remake.git"
+    "url": "git+https://github.com/rxfe-a/ytmp4-remake.git"
   },
   "keywords": [],
   "author": "https://rxfe.xyz`",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rxfe-a/ytmp3-remake/issues"
+    "url": "https://github.com/rxfe-a/ytmp4-remake/issues"
   },
   "homepage": "https://rxfe.xyz/ytmp-remake/visit",
   "website": "https://rxfe.xyz/ytmp-remake/",
