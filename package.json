@@ -2,10 +2,10 @@
   "name": "ytmp-remake",
   "version": "1.0.0-dev",
   "description": "A remake of a very popular youtube converter",
-  "main": "src/index.js",
+  "main": "source/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node source/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "website": "https://rxfe.xyz/ytmp-remake/",
   "dependencies": {
     "@fastify/static": "^8.2.0",
+    "dotenv": "^17.2.3",
     "fastify": "^5.6.1",
     "ffmpeg": "^0.0.4",
     "ytdl": "^1.4.1"
