@@ -40,17 +40,53 @@ box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.297);
 
 .mainnav_rightsidediv {
     margin-left: auto;
+    justify-content: center;
     margin-right: 20px;
     height: inherit;
     background-color: transparent;
-    width: 320px;
+    width: 350px;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
 #github {
-    height: 40px;
+    height: 45px;
     border-radius: 15px;
-    width: 40px;
+    width: 45px;
+    transition: all 0.3s ease;
+}
+
+#github:hover {
+    height: 60px;
+    width: 60px;
+}
+
+#youtube_nav_url {
+    height: 45px;
+}
+
+#youtube_nav_url_button {
+    border: none;
+    height: inherit;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
+    background-color: rgb(228, 33, 33);
+    color: white;
+}
+
+#youtube_nav_url_input {
+   height: inherit;
+   outline: none;
+   border: 0.5px solid gray;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+#youtube_nav_url_button:hover {
+   background-color: rgb(255, 86, 86); 
+   border: 2px solid rgb(200, 0, 0);
+   font-weight: 700;
 }
