@@ -1,6 +1,7 @@
 const F_MP3= 'https://github.com/rxfe-a/ytmp3-remake';
 const F_MP4= 'https://github.com/rxfe-softworks/ytmp4-remake';
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const githubIcon = document.getElementById("github");
     githubIcon.addEventListener("click", function(event) {
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => {
                 console.error('Error:', error);
                 window.location.href = F_MP3;
-                target_format = 'mp3';
             });
     });
 });

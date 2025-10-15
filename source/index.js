@@ -8,6 +8,11 @@ fastify.register(require('@fastify/static'), {
   root: path.join(__dirname, '..', 'public'),
   prefix: '/', 
 });
+fastify.register(require('@fastify/static'), {
+  root: path.join(__dirname, '..', 'downloads'),
+  prefix: '/server-downloads/',
+  decorateReply: false,
+});
 
 fastify.get('/serverdat/', async (request, reply) => {
   try {
