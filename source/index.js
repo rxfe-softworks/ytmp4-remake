@@ -3,6 +3,8 @@ require('dotenv').config();
 const fastify = require('fastify')({ logger: true });
 const path = require('path');
 const fs = require('fs').promises;
+const YouTubeDownloader = require('./ytapi');
+const downloader = new YouTubeDownloader();
 
 fastify.register(require('@fastify/static'), {
   root: path.join(__dirname, '..', 'public'),

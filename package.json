@@ -24,6 +24,8 @@
     "dotenv": "^17.2.3",
     "fastify": "^5.6.1",
     "ffmpeg": "^0.0.4",
-    "ytdl": "^1.4.1"
+    "fluent-ffmpeg": "^2.1.3",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.11.5"
   }
 }
