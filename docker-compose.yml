@@ -1,0 +1,20 @@
+version: "6.7"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      TARGET_FORMAT: mp3
+      AUTO_DELETE: "true"
+      QUOTA: disabled
+      QOTD: null
+    command: npm start
