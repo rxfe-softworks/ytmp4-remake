@@ -5,9 +5,12 @@ body {
     height: 100vh;
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    background-image: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainnav_ {
@@ -15,9 +18,11 @@ body {
     height: 75px;
     background-color: #ffffff;
     display: flex;
-    -webkit-box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.150); 
-box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.150);
+    -webkit-box-shadow: 5px 4px 15px 5px rgba(0, 0, 0, 0.150); 
+box-shadow: 5px 4px 15px 5px rgba(0, 0, 0, 0.150);
     flex-direction: row;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     align-items: center;
 }
 
@@ -32,8 +37,8 @@ box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.150);
 }
 
 #fileFormatLogoTitle {
-    font-style: italic;
-    font-weight: 850;
+    font-style: underline;
+    font-weight: 300;
     color: rgb(0, 0, 0);
 }
 
@@ -51,19 +56,20 @@ box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.150);
 }
 
 #github {
-    height: 45px;
+    height: 40px;
     border-radius: 15px;
-    width: 45px;
+    width: 40px;
     transition: all 0.3s ease;
 }
 
 #github:hover {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 }
 
 #youtube_nav_url {
     height: 45px;
+    font-family: "Montserrat", sans-serif;
 }
 
 #youtube_nav_url_button {
@@ -81,6 +87,7 @@ box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.150);
    height: inherit;
    outline: none;
    border: 0.5px solid gray;
+   font-family: "Montserrat", sans-serif;
     padding: 0px 15px;
     border-radius: 5px;
 }
@@ -99,4 +106,46 @@ box-shadow: 5px 8px 18px 5px rgba(0, 0, 0, 0.150);
     align-self: center;
     flex-direction: column;
     align-items: center;
+}
+
+.mainsection_ h2 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+#highlightedText {
+    color: red;
+    font-weight: 800;
+}
+
+#youtube_url_form {
+    background-color: transparent;
+    padding: 30px 90px;
+}
+
+#youtube_url_input {
+    width: 300px;
+    font-family: "Montserrat", sans-serif;
+    height: 55px;
+    border-radius: 6px;
+    border: 0.5px solid gray;
+    outline: none;
+    padding: 0px 15px;
+    transition: all 0.3s ease;
+}
+
+#youtube_url_input:focus {
+    border: 2px solid rgb(228, 33, 33);
+}
+
+#youtube_url_button {
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    padding: 0px 20px;
+    background-color: rgb(228, 33, 33);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
