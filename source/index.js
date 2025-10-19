@@ -24,6 +24,7 @@ fastify.get('/serverdat/', async (request, reply) => {
       TARGET_FORMAT: process.env.TARGET_FORMAT,
       homepage: packageData.homepage,
       version: packageData.version,
+      QOTD: process.env.QOTD || null,
     };
   } catch (error) {
     fastify.log.error(error);
