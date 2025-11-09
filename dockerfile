@@ -11,7 +11,7 @@ COPY . .
 EXPOSE 3000
 
 ENV PORT=3000 \
-    TARGET_FORMAT=mp3 \
+    TARGET_FORMAT=mp4 \
     AUTO_DELETE=true \
     QUOTA=disabled \
     QOTD=null

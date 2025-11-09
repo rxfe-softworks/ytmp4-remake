@@ -1,4 +1,4 @@
 {
-    "TARGET_FORMAT": "mp3",
-    "TARGET_REPO": "https://github.com/rxfe-a/ytmp3-remake.git"
+    "TARGET_FORMAT": "mp4",
+    "TARGET_REPO": "https://github.com/rxfe-a/ytmp4-remake.git"
 }
