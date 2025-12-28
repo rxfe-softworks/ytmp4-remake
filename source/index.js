@@ -6,14 +6,34 @@ const fs = require('fs').promises;
 const YouTubeDownloader = require('./ytapi');
 const downloader = new YouTubeDownloader();
 
+// Register static files from public folder
 fastify.register(require('@fastify/static'), {
   root: path.join(__dirname, '..', 'public'),
   prefix: '/', 
 });
+
+// Register static files from downloads folder
 fastify.register(require('@fastify/static'), {
   root: path.join(__dirname, '..', 'downloads'),
   prefix: '/server-downloads/',
   decorateReply: false,
+});
+
+// 404 handler - must be registered after static files
+fastify.setNotFoundHandler(async (request, reply) => {
+  // Check if 404.html exists in the public folder
+  const notFoundPath = path.join(__dirname, '..', 'public', '404.html');
+  try {
+    await fs.access(notFoundPath);
+    // Send the 404.html file
+    return reply.code(404).type('text/html').sendFile('404.html', path.join(__dirname, '..', 'public'));
+  } catch (error) {
+    // If 404.html doesn't exist, send a default 404 response
+    return reply.code(404).type('text/html').send(`
+      <h1>404 - Not Found</h1>
+      <p>The requested resource was not found on this server.</p>
+    `);
+  }
 });
 
 fastify.get('/serverdat/', async (request, reply) => {
