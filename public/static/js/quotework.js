@@ -1,4 +1,4 @@
-const file = '/js/quotes.txt';
+const file = '/static/js/quotes.txt';
 
 async function fetchQuotes() {
     try {
